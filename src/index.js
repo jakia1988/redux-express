@@ -1,8 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import AppRoutes from './routes';
+//import react router dependents
+import { HashRouter as Router, Route } from 'react-router-dom'
+import store from './store/Store';
+import { Provider } from 'react-redux';
+
+//import page-layout wrapper (nav, actionbar, sidebar, footer, etc.)
+import Layout from "./components/Layout";
+
 import * as serviceWorker from './serviceWorker';
+
+const App = () => (
+    <Provider store={ store } key="provider">       
+                <Layout>
+                    <Router>
+                        <Route render={({ location }) => (
+                            <AppRoutes location={location} />  
+                        )}/>
+                    </Router>
+                </Layout>
+    </Provider>
+);
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

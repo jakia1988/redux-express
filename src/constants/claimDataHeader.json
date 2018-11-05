@@ -1,0 +1,35 @@
+[{
+    "name": "Service",
+    "key": "servicedate",
+    "sort": true
+  },
+  {
+    "name": "Facility/Provider",
+    "key": "facilityprovider",
+    "sort": true
+  },
+  {
+    "name": "Service Type",
+    "key": "servicetype",
+    "sort": true
+  },
+  {
+    "name": "Status",
+    "key": "status",
+    "sort": true
+  },
+  {
+    "name": "Claim Charge",
+    "key": "claimcharge",
+    "sort": false
+  },
+  {
+    "name": "Your Cost",
+    "key": "yourcost",
+    "sort": false
+  },
+  {
+    "name": "Show Details",
+    "key": "showdetails",
+    "sort": false
+  }]  
